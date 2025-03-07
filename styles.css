@@ -4,3 +4,40 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.carrousel{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: baseline;
+    width: 1000px;
+    border: solid 5px black;
+    background-color: white;
+    
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: solid 5px black;
+
+}
+
+.arrow{
+    position: absolute;
+    font-size: 30px;
+    width: 50px;
+    background-color: aquamarine;
+}
+
+#arrowLeft{
+    top: 250px;
+    margin-left: 330px;
+}
+
+#arrowRight{
+    position: absolute;
+    top: 250px;
+    margin-left: 620px;
+
+}
