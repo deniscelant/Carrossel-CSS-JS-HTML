@@ -1,5 +1,12 @@
-let images = ["red", "blue", "white", "yellow", "green"];
-let active = images[2];
+
+let images = ["imgs/Card01.png",
+              "imgs/Card02.png",
+              "imgs/Card03.png",
+              "imgs/Card04.png",
+              "imgs/Card05.png"];
+
+const active = images[2];
+
 
 // const last = images.pop()
 // images.unshift(last)
@@ -14,7 +21,7 @@ const arrowLeft = document.getElementById("arrowLeft");
 const arrowRight = document.getElementById("arrowRight");
 
 Array.from(card).forEach((c) => {
-  c.style.backgroundColor = images[index++];
+  c.src = images[index++];
 
 });
 arrowLeft.onclick = () => {
@@ -25,13 +32,12 @@ arrowLeft.onclick = () => {
   images.unshift(last);
 
   Array.from(card).forEach((c) => {
-    c.style.backgroundColor = images[index++];
+    c.src = images[index++];
   
   });
   // Array.from(card).forEach(() => {
   //   c.style.backgroundColor = images[index++];
   // });
-  console.log(images);
 };
 
 arrowRight.onclick = () => {
@@ -42,11 +48,10 @@ arrowRight.onclick = () => {
   images.push(first);
 
   Array.from(card).forEach((c) => {
-    c.style.backgroundColor = images[index++];
+    c.src = images[index++];
   
   });
   // Array.from(card).forEach(() => {
   //   c.style.backgroundColor = images[index++];
   // });
-  console.log(images);
 };
