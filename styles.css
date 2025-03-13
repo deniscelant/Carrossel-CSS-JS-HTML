@@ -12,7 +12,11 @@ p{color: white;}
 *{
     outline: none;
     user-select: none;
-    font-family: "Montserrat", sans-serif;
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .carrousel{
@@ -21,6 +25,7 @@ p{color: white;}
     align-items: center;
     justify-content: center ;
     width: 1000px;
+    margin-top: 15px;
     
 }
 
@@ -32,28 +37,28 @@ p{color: white;}
     padding: 0px 5px;
     align-items: center;
     justify-content: center;
+    transition: all 2s ease;
 }
+
 
 .arrow{
     position: absolute;
     font-size: 30px;
     width: 50px;
-    background-color: rgb(8, 202, 137);
-    box-shadow: 10px 2px 50px 2px black;
     cursor: pointer;
     padding: 0px 0px 0px 15px;
     color: white;
 }
  
 #arrowLeft{
-    top: 350px;
-    margin-left: -465px;
+    top: 400px;
+    margin-left: -480px;
 }
 
 #arrowRight{
     position: absolute;
-    top: 350px;
-    margin-left: 485px;
+    top: 400px;
+    margin-left: 505px;
 
 }
 
@@ -67,6 +72,11 @@ p{color: white;}
 
 
 #red, #blue, #yellow, #green{
-    mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent 100% );
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent 80% );
 
+}
+
+#white{
+    width: 450px;
+    margin-bottom: 25px;
 }
